@@ -1,0 +1,35 @@
+package course.javafortesters.calculator;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CalculatorTest {
+
+	@Test
+	public void testAdd() {
+		@Test(timeout = 500)
+		public void testAdd() {
+			Calculator tester = new Calculator();
+			assertEquals("Result", 15, tester.add(10, 5));
+		}
+	}
+
+	@Test
+	public void testSubtract() {
+		Calculator tester = new Calculator();
+		assertEquals("Result", 5, tester.subtract(10, 5));
+	}
+
+	@Test
+	public void testMultipy() {
+		Calculator tester = new Calculator();
+		assertEquals("Result", 50, tester.multiply(10, 5));
+	}
+
+	@Test
+	public void testDivide() {
+		Calculator tester = new Calculator();
+		assertEquals("Result", 2, tester.divide(10, 5));
+	}
+}

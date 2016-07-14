@@ -1,0 +1,23 @@
+package course.javafortesters.calculator;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class ArrayCalculatorTest {
+	int a[] = new int[3];
+	ArrayCalculator c;
+	
+	@Before
+	public void init() {
+	   c = new ArrayCalculator();
+	   a[0] = 1;
+	   a[1] = 2;
+	   a[2] = 3;
+	}
+	@Test
+	public void testSum() {
+		assertEquals("Result", 5, c.sum(a));
+	}
+}
